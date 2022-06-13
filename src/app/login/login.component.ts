@@ -15,7 +15,7 @@ import { NotificationService } from '../service/notification.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit, OnDestroy {
-  public showLoading: boolean;
+  public showLoading: boolean = false;
   private subscriptions: Subscription[] = [];
 
   constructor(private router: Router, private authenticationService: AuthenticationService, private notificationService: NotificationService) { }
